@@ -1,0 +1,11 @@
+name: Validate IP List
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate IP format
+        run: |
+          # Add script to validate IP format
+          echo "Validating IP list format..."
